@@ -25,8 +25,7 @@ poetry run ./export.py \
   secret123 \
     --ignore team=42 \
     --ignore forum=78 \
-    --ignore user=456 \
-  --messages-quantity=2000
+    --ignore user=456
 ```
 
 This takes a while, be patient!
