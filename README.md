@@ -15,8 +15,10 @@ This requires [Python](https://www.python.org) and [Poetry](https://python-poetr
 
 ## Usage
 
+### Export
+
 ```
-poetry run ./ryver.py \
+poetry run ./export.py \
   export-dir \
   my-domain.ryver.com \
   jon@example.com \
@@ -28,3 +30,10 @@ poetry run ./ryver.py \
 ```
 
 This takes a while, be patient!
+
+### Display
+
+
+```
+poetry run ./display path-to-my-export-file.json
+```

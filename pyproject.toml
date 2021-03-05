@@ -8,6 +8,7 @@ authors = ["Jonathan Ballet <jon@multani.info>"]
 python = "^3.9"
 httpx = "^0.17.0"
 loguru = "^0.5.3"
+blessings = "^1.7"
 
 [tool.poetry.dev-dependencies]
 isort = "^5.7.0"
