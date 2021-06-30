@@ -115,7 +115,7 @@ class Ryver:
             return [], None
 
         messages = data["d"]["results"]
-        last_id = messages[0]["id"]
+        last_id = messages[-1]["id"]
 
         return messages, last_id
 
@@ -170,8 +170,8 @@ def parse_ignores(rules):
         kind += "s"
 
         if kind not in ignores:
-            raise ValueError("Ignore only support {}".format(
-                ", ".join(sorted(ignores))))
+            raise ValueError("Ignore only support {}, not '{}'".format(
+                ", ".join(sorted(ignores)), kind))
 
         try:
             value = int(value)
